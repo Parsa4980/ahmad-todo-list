@@ -1,0 +1,201 @@
+
+body {margin:0;}
+
+
+
+
+#container{
+  position: relative;
+  padding:0px;
+  background-color:bisque; 
+  height: 100vh;
+  
+}
+#nav-bar{
+  position: absolute;
+  width: 100%;
+  height: 46px;
+  top: 0px;
+  z-index: 2;
+}
+#nav-bar ul div{
+  z-index: 3;
+}
+#nav-bar ul li{
+  z-index: 4;
+}
+#task-container{
+  position:absolute;
+  width: 100%;
+  height: 85vh;
+  top: 46px;
+  z-index: 1;
+ overflow-y: scroll;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ 
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(207, 177, 177);
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+
+
+
+/* hamburger menu code  */
+
+
+ 
+.hamburger-menu{
+  position: relative;
+  left: 0px;
+  height: 46px;
+
+}
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,.menu__btn > span::before, .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #0caaf3;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100vh;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #aed7f3;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  width: 20vw;
+  color: rgb(224, 73, 149);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #e61122;
+}
+
+
+/* until here is hamburger menu  */
+
+/* from here is input code */
+
+#input-container{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 7vh;
+  background-color:#e61122;
+  overflow: hidden;
+}
+
+#text-input{
+  position: absolute;
+  width: 90%;
+  height: 7vh;
+  left: 0px;
+  border: 2px solid ;
+  text-align: center;
+}
+#text-input:hover{
+  background-color: #22f1f1;
+
+}
+#text-button{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  right: 0px;
+  background-color: #283be6;
+  border-style: none;
+}
+#text-button:hover{
+background-color: #130686;
+border: 2px solid black;
+color: antiquewhite;
+}
+
+
+/* until here is input code */
+
+
+
+
+
