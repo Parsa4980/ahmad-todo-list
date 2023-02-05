@@ -32,6 +32,9 @@ body {margin:0;}
   z-index: 1;
  overflow-y: scroll;
 }
+#task-container p{
+  text-align: center;
+}
 
 
 ul {
@@ -78,6 +81,8 @@ li a:hover:not(.active) {
   position: relative;
   left: 0px;
   height: 46px;
+  width: 60%;
+  left: 0px;
 
 }
 #menu__toggle {
