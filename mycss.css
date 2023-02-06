@@ -89,6 +89,7 @@ li a:hover:not(.active) {
   opacity: 0;
 }
 #menu__toggle:checked + .menu__btn > span {
+  top: 10px;
   transform: rotate(45deg);
 }
 #menu__toggle:checked + .menu__btn > span::before {
@@ -104,7 +105,7 @@ li a:hover:not(.active) {
 }
 .menu__btn {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 20px;
   width: 26px;
   height: 26px;
@@ -121,11 +122,11 @@ li a:hover:not(.active) {
 }
 .menu__btn > span::before {
   content: '';
-  top: -8px;
+  top: 10px;
 }
 .menu__btn > span::after {
   content: '';
-  top: 8px;
+  top: 20px;
 }
 .menu__box {
   display: block;
